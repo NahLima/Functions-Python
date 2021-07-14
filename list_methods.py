@@ -12,13 +12,19 @@ def count(iterable, x):
             print(str(x)+':'+str(value))
 
 
-lista = [2, 56, 2, 9, 8, 'B', 56, 56, 2, 56, 'a', 'a']
-print(count(lista, 0))
+# lista = [2, 56, 2, 9, 8, 'B', 56, 56, 2, 56, 'a', 'a']
+# print(count(lista, 0))
 
 
 def clear(iterable):
     """Remove all items from the list. Equivalent to del a[:]."""
-    pass
+    for x in iterable:
+        del x
+    #return []
+
+
+#delete_list = ['B', 'amora', 'a', 'a', 1, 8, 60]
+# print(clear(delete_list))
 
 
 def sort(iterable):
