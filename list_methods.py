@@ -7,13 +7,11 @@ def count(iterable, x):
         else:
             contagem[x] = 1
 
-    for x, value in contagem.items():
-        if value > 1:
-            print(str(x)+':'+str(value))
+    return contagem
 
 
-# lista = [2, 56, 2, 9, 8, 'B', 56, 56, 2, 56, 'a', 'a']
-# print(count(lista, 0))
+lista = [2, 56, 2, 9, 8, 'B', 56, 56, 2, 56, 'a', 'a']
+print(count(lista, 0))
 
 
 def clear(iterable):
@@ -26,26 +24,32 @@ def clear(iterable):
 # print(clear(delete_list))
 
 
-def sort(iterable):
+def ordenation(iterable):
     """Sort the items of the list in place
     (the arguments can be used for sort customization, see sorted()
     for their explanation)."""
-    lista = []
-    for x in range(0, len(iterable)):
-        if x == 0 or x > lista[-1]:
-            lista.append(x)
-        else:
-            pos = 0
-            while pos < len(lista):
-                if x <= lista[pos]:
-                    lista.insert(pos, x)
-                    break
-                pos += 1
-    return lista
+    if len(iterable) < 1:
+        return iterable  # caso base
+    else:
+        pivot = iterable[0]  # caso recursivo
+        # sublista com os numeros menores
+        smaller = [i for i in iterable[1:] if i <= pivot]
+        # sublista com os numeros maiores
+        greater = [i for i in iterable[1:] if i > pivot]
+        # concatenação
+        return ordenation(smaller) + [pivot] + ordenation(greater)
 
 
 teste = [5, 6, 9, 19, 21, 100, 56, 85]
-print(sort(teste))
+teste2 = ["a", "z", "f", "m", "n"]
+teste3 = ["cachoro", "dog", "girafa", "zebra", "amora"]
+teste4 = ["A", "z", "a", "D"]  # ele retorna a ordem por maiuscula e
+# depois minuscula
+
+# print(ordenation(teste))
+# print(ordenation(teste2))
+# print(ordenation(teste3))
+# print(ordenation(teste4))
 
 
 def remove(iterable, x):

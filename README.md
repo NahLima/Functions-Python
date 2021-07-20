@@ -14,7 +14,7 @@ https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
 * count()
 * pop()
 * reverse()
-* sort()
+* sort() /  https://pt.wikipedia.org/wiki/Algoritmo_de_ordena%C3%A7%C3%A3o
 * copy()
 * clear()
 
