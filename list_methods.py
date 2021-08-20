@@ -68,3 +68,6 @@ def remove(iterable, x):
 # lista = [1,4,8,10,15]
 # remove(lista,10)
 # print(lista)
+
+
+#teste novo git push
