@@ -6,15 +6,15 @@ https://www.programiz.com/python-programming/methods/list
 
 https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
 
-* index()
-* append()
+* index() :+1:   https://www.guru99.com/python-list-index.html
+* append() 
 * extend()
 * insert()
-* remove()
-* count()
+* remove() :+1:
+* count() :+1:
 * pop()
 * reverse()
-* sort() /  https://pt.wikipedia.org/wiki/Algoritmo_de_ordena%C3%A7%C3%A3o
-* copy()
-* clear()
+* sort() :+1:  https://pt.wikipedia.org/wiki/Algoritmo_de_ordena%C3%A7%C3%A3o 
+* copy() :+1:
+* clear() :+1:
 
